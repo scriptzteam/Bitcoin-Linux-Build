@@ -4,7 +4,7 @@
 git clone https://github.com/bitcoin/bitcoin.git
 cd bitcoin
 ./autogen.sh
-./configure --disable-hardening --without-gui --without-bdb
+./configure --disable-hardening --without-gui --without-bdb #this is ours, change as you want..
 make
 make install
 ```
