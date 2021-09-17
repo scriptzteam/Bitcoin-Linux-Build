@@ -1,4 +1,4 @@
-# BitCoin-Unix-Build
+# BitCoin-Linux-Build
 
 ```
 git clone https://github.com/bitcoin/bitcoin.git
