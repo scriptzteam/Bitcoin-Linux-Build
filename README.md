@@ -1,4 +1,4 @@
-# BitCoin-Linux-Build
+# Bitcoin-Linux-Build
 
 ```
 apt install build-essential autoconf pkg-config libtool libboost-dev libevent-dev
