@@ -1,6 +1,7 @@
 # BitCoin-Linux-Build
 
 ```
+apt install build-essential autoconf pkg-config libtool
 git clone https://github.com/bitcoin/bitcoin.git
 cd bitcoin
 ./autogen.sh
