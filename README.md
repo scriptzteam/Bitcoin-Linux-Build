@@ -1,7 +1,7 @@
 # Bitcoin-Linux-Build
 
 ```
-apt install build-essential autoconf pkg-config libtool libboost-dev libevent-dev
+apt install build-essential autoconf bsdmainutils pkg-config libtool libboost-dev libevent-dev
 git clone https://github.com/bitcoin/bitcoin.git
 cd bitcoin
 ./autogen.sh
