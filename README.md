@@ -10,5 +10,7 @@ git clone https://github.com/bitcoin/bitcoin.git
 cd bitcoin
 cmake -B build -DENABLE_WALLET=OFF
 cmake --build build --target bitcoind bitcoin-cli
-cmake --install build
+cd build/src
+./bitcoind -version
+./bitcoin-cli -version
 ```
