@@ -8,9 +8,7 @@ update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 11
 update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 11
 git clone https://github.com/bitcoin/bitcoin.git
 cd bitcoin
-./autogen.sh
-./configure --disable-hardening --without-gui --without-bdb --disable-wallet #this is ours, change as you want..
-make clean
-make
-make install
+cmake -B build -DENABLE_WALLET=OFF
+cmake --build build --target bitcoind bitcoin-cli
+cmake --install build
 ```
