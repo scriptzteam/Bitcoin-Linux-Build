@@ -13,4 +13,6 @@ cmake --build build --target bitcoind bitcoin-cli
 cd ~/bitcoin/build/bin
 ./bitcoind -version
 ./bitcoin-cli -version
+cp --preserve=mode,ownership,timestamps ~/bitcoin/build/bin/bitcoind "$(which bitcoind)"
+cp --preserve=mode,ownership,timestamps ~/bitcoin/build/bin/bitcoin-cli "$(which bitcoin-cli)"
 ```
